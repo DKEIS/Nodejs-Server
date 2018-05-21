@@ -1,0 +1,29 @@
+
+
+<html>
+  <head>
+    <title>Node.js & Express - upload image with multer</title>
+  </head>
+  <body>
+      <h1>Upload an image</h1>
+      <form action="/uploads" method="POST" enctype="multipart/form-data">
+        <h2>Select style AND Select an image to upload:</h2>
+	<input type="radio" name = "style" value = "1">1.style-candy
+	<input type="radio" name = "style" value = "2">2.style-mosaic
+	<input type="radio" name = "style" value = "3">3.style-starry-night
+	<input type="radio" name = "style" value = "4">4.stlye-udnie</br>
+	</br>
+        <input type="file" name="fileName">
+        <br/>
+        <br/>
+        or
+
+        <input type="text" name="imageUrl" placeholder="image url">
+        <br/>
+        <br/>
+        <input type="submit" value="Upload Image!!">
+        <h1 id='uploadProgress'></h1>
+      </form>
+
+  </body>
+</html>
